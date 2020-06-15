@@ -219,6 +219,12 @@ jQuery(function($) {
 	}
 	owlCarouselFunction();
 
+	$('#myModal').modal(focus)
+
+	$('#myModal').on('shown.bs.modal', function () {
+		$('#myInput').trigger('focus')
+	})
+
 	var quillInit = function() {
 
 		var toolbarOptions = [
