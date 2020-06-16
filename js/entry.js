@@ -89,7 +89,7 @@ window.ToDoList = {
                   <td>
                     <a href="#" class="update-task actions" data-id=${task.id}>
                       <i
-                        class="fa fa-wrench"
+                        class="fa fa-wrench edit"
                         data-toggle="modal"
                         data-target="#exampleModalCenter"
                       ></i>
@@ -107,7 +107,14 @@ window.ToDoList = {
             ToDoList.createTask();
         });
 
-        $('#exampleModalCenter').submit(function (event) {
+        // $('#exampleModalCenter').submit(function (event) {
+        //     event.preventDefault();
+        //     let id = $(this).data('id');
+        //     ToDoList.updateTask(id);
+        // })
+
+
+        $('#tasks-table tbody').delegate('a.edit', 'click', function (event) {
             event.preventDefault();
             let id = $(this).data('id');
             ToDoList.updateTask(id);
