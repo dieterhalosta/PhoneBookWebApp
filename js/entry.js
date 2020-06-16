@@ -89,7 +89,7 @@ window.ToDoList = {
                   <td>
                     <a href="#" class="update-task actions" data-id=${task.id}>
                       <i
-                        class="fa fa-wrench edit"
+                        class="fa fa-wrench"
                         data-toggle="modal"
                         data-target="#exampleModalCenter"
                       ></i>
@@ -114,7 +114,7 @@ window.ToDoList = {
         // })
 
 
-        $('#tasks-table tbody').delegate('a.edit', 'click', function (event) {
+        $('#tasks-table tbody').delegate('.edit', 'submit', function (event) {
             event.preventDefault();
             let id = $(this).data('id');
             ToDoList.updateTask(id);

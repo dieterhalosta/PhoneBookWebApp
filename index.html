@@ -177,6 +177,89 @@
             </tr>
             </thead>
             <tbody>
+            <!-- Modal for update a contact -->
+            <div
+                    class="modal fade update-modal"
+                    id="exampleModalCenter"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">
+                      Change contact
+                    </h5>
+                    <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="recipient-Firstname" class="col-form-label"
+                        >First Name</label
+                        >
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="recipient-Firstname"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-Lastname" class="col-form-label"
+                        >Last Name</label
+                        >
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="recipient-Lastname"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-number" class="col-form-label"
+                        >Phone Number</label
+                        >
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="recipient-number"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-email" class="col-form-label"
+                        >E-Mail</label
+                        >
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="recipient-email"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button  type="submit" class="btn btn-primary edit" value="Save">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
             </tbody>
           </table>
           </div>
@@ -185,88 +268,88 @@
       </div>
 
       <!-- Modal for update a contact -->
-      <div
-              class="modal fade update-modal"
-              id="exampleModalCenter"
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalCenterTitle"
-              aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">
-                Change contact
-              </h5>
-              <button
-                      type="button"
-                      class="close"
-                      data-dismiss="modal"
-                      aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="recipient-Firstname" class="col-form-label"
-                  >First Name</label
-                  >
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="recipient-Firstname"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="recipient-Lastname" class="col-form-label"
-                  >Last Name</label
-                  >
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="recipient-Lastname"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="recipient-number" class="col-form-label"
-                  >Phone Number</label
-                  >
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="recipient-number"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="recipient-email" class="col-form-label"
-                  >E-Mail</label
-                  >
-                  <input
-                          type="text"
-                          class="form-control"
-                          id="recipient-email"
-                  />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button  type="submit" class="btn btn-primary" value="Save">
-                Save changes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+<!--      <div-->
+<!--              class="modal fade update-modal"-->
+<!--              id="exampleModalCenter"-->
+<!--              tabindex="-1"-->
+<!--              role="dialog"-->
+<!--              aria-labelledby="exampleModalCenterTitle"-->
+<!--              aria-hidden="true"-->
+<!--      >-->
+<!--        <div class="modal-dialog modal-dialog-centered" role="document">-->
+<!--          <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--              <h5 class="modal-title" id="exampleModalCenterTitle">-->
+<!--                Change contact-->
+<!--              </h5>-->
+<!--              <button-->
+<!--                      type="button"-->
+<!--                      class="close"-->
+<!--                      data-dismiss="modal"-->
+<!--                      aria-label="Close"-->
+<!--              >-->
+<!--                <span aria-hidden="true">&times;</span>-->
+<!--              </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--              <form>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="recipient-Firstname" class="col-form-label"-->
+<!--                  >First Name</label-->
+<!--                  >-->
+<!--                  <input-->
+<!--                          type="text"-->
+<!--                          class="form-control"-->
+<!--                          id="recipient-Firstname"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="recipient-Lastname" class="col-form-label"-->
+<!--                  >Last Name</label-->
+<!--                  >-->
+<!--                  <input-->
+<!--                          type="text"-->
+<!--                          class="form-control"-->
+<!--                          id="recipient-Lastname"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="recipient-number" class="col-form-label"-->
+<!--                  >Phone Number</label-->
+<!--                  >-->
+<!--                  <input-->
+<!--                          type="text"-->
+<!--                          class="form-control"-->
+<!--                          id="recipient-number"-->
+<!--                  />-->
+<!--                </div>-->
+<!--                <div class="form-group">-->
+<!--                  <label for="recipient-email" class="col-form-label"-->
+<!--                  >E-Mail</label-->
+<!--                  >-->
+<!--                  <input-->
+<!--                          type="text"-->
+<!--                          class="form-control"-->
+<!--                          id="recipient-email"-->
+<!--                  />-->
+<!--                </div>-->
+<!--              </form>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--              <button-->
+<!--                      type="button"-->
+<!--                      class="btn btn-secondary"-->
+<!--                      data-dismiss="modal"-->
+<!--              >-->
+<!--                Close-->
+<!--              </button>-->
+<!--              <button  type="submit" class="btn btn-primary edit" value="Save">-->
+<!--                Save changes-->
+<!--              </button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </section>
 
     <div class="clear"></div>
