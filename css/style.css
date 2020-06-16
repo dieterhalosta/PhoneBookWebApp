@@ -1258,8 +1258,8 @@ h4 {
   color: #fff;
 }
 .btn.btn-primary:hover {
-  background: #90c317;
-  border-color: #90c317;
+  background: #61892F;
+  border-color: #61892F;
 }
 
 .btn.btn-outline-white {
@@ -1274,11 +1274,18 @@ h4 {
 }
 
 .btn.btn-outline-primary {
-  color: #89ba16;
+  color: #61892F;
 }
 .btn.btn-outline-primary:hover {
   color: #fff;
-  background: #89ba16;
+  background: #61892F;
+}
+
+.fa {
+  color: #86C232; !important;
+}
+.fa:hover{
+  color: #61892F; !important;
 }
 
 .custom-pagination a {
@@ -2204,6 +2211,6 @@ h4 {
 }
 
 .table-header {
-  background-color: #89ba16;
+  background-color: #86C232;
   color: white;
 }

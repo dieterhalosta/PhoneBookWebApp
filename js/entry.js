@@ -18,7 +18,7 @@ window.ToDoList = {
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify(requestBody)
-        }).done(function (response) {
+        }).done(function () {
            ToDoList.clearForm();
            ToDoList.getTasks();
 
