@@ -1,3 +1,11 @@
+body {
+  background: url('../images/hero_1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,700");
 .site-navbar {
   margin-bottom: 0px;
@@ -1766,6 +1774,7 @@ h4 {
 
 .copyright {
   color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 0rem;
 }
 .copyright a {
   color: #fff;

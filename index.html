@@ -30,208 +30,130 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body id="top">
+  <body id="top" class="bg">
 
-    <!--Loader Page-->
-    <div id="overlayer"></div>
-    <div class="loader">
-      <div class="spinner-border text-primary" role="status">
-        <span class="sr-only">Loading...</span>
-      </div>
+  <!--Loader Page-->
+  <div id="overlayer">
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-
+  </div>
+  </div>
+  <div class="site-wrap">
     <!--NavBar-->
-    <div class="site-wrap">
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
-        <div class="site-mobile-menu-body"></div>
       </div>
-      <!-- .site-mobile-menu -->
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- .site-mobile-menu -->
 
-      <!-- NAVBAR -->
-      <header class="site-navbar mt-3">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="site-logo col-6">
-              <a href="index.html"
-                ><img
-                  src="images/logodieter_1_mobile.png"
-                  alt="DietersPhoneBook"
-                  title="DietersPhoneBook"
-                  class="logo-3"
-              /></a>
-            </div>
-
-            <div
-              class="right-cta-menu text-right d-flex aligin-items-center col-6"
-            >
-              <div class="ml-auto">
-                <a href="about.html" class="btn btn-primary">About</a>
-              </div>
-              <a
-                href="#"
-                class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"
-                ><span class="icon-menu h3 m-0 p-0 mt-2"></span
-              ></a>
+    <!-- NAVBAR -->
+    <header class="site-navbar mt-3">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="site-logo col-6">
+            <a href="index.html"
+            ><img
+                    src="images/logodieter_1_mobile.png"
+                    alt="DietersPhoneBook"
+                    title="DietersPhoneBook"
+                    class="logo-3"
+            /></a>
+          </div>
+          <div
+                  class="right-cta-menu text-right d-flex aligin-items-center col-6"
+          >
+            <div class="ml-auto">
+              <a href="about.html" class="btn btn-primary">About</a>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- HOME -->
-      <section
-        class="home-section section-hero overlay bg-image"
-        style="background-image: url('images/hero_1.jpg');"
-        id="home-section"
-      >
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-md-12">
-              <!--Header-->
-              <div class="mb-5 text-center">
-                <h1 class="text-white font-weight-bold">
-                  Welcome to the Phone Book App
-                </h1>
-              </div>
-              <form method="post" class="search-jobs-form">
-                <div class="row mb-5">
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-9 mb-4 mb-lg-0">
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      placeholder="Seach for a contact..."
-                    />
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-lg btn-block text-white btn-search"
-                    >
-                      <span class="icon-search icon mr-2"></span>Search
-                    </button>
-                  </div>
-                </div>
-              </form>
+    <!-- HOME -->
+    <section
+            class="home-section section-hero overlay bg-image"
+            id="home-section"
+    >
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-12">
+            <!--Header-->
+            <div class="mb-5 text-center">
+              <h1 class="text-white font-weight-bold">
+                Welcome to the Phone Book App
+              </h1>
             </div>
-
-            <!--Data Table-->
-            <table id="tasks-table" class="table table-hover">
-              <thead>
-                <tr class="table-header">
-                  <th scope="col">First Name</th>
-                  <th scope="col">Last Name</th>
-                  <th scope="col">Phone Number</th>
-                  <th scope="col">E-Mail Address</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Test first Name</td>
-                  <td>Test last Name</td>
-                  <td>010012454</td>
-                  <td>Test@test.test</td>
-                  <td>
-                    <a href="#" class="update-task actions" data-id="1">
-                      <i
-                        class="fa fa-wrench"
-                        data-toggle="modal"
-                        data-target="#exampleModalCenter"
-                      ></i>
-                    </a>
-                    <a href="#" class="remove-task actions" data-id="1">
-                      <i class="fa fa-trash"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Test first Name</td>
-                  <td>Test last Name</td>
-                  <td>010012454</td>
-                  <td>Test@test.test</td>
-                  <td>
-                    <a href="#" class="update-task actions" data-id="1">
-                      <i
-                        class="fa fa-wrench"
-                        data-toggle="modal"
-                        data-target="#exampleModalCenter"
-                      ></i>
-                    </a>
-                    <a href="#" class="remove-task actions" data-id="1">
-                      <i class="fa fa-trash"></i>
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Test first Name</td>
-                  <td>Test last Name</td>
-                  <td>010012454</td>
-                  <td>Test@test.test</td>
-                  <td>
-                    <a href="#" class="update-task actions" data-id="1">
-                      <i
-                        class="fa fa-wrench"
-                        data-toggle="modal"
-                        data-target="#exampleModalCenter"
-                      ></i>
-                    </a>
-                    <a href="#" class="remove-task actions" data-id="1">
-                      <i class="fa fa-trash"></i>
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
+            <form method="get" class="search-jobs-form">
+              <div class="row mb-5">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-9 mb-4 mb-lg-0">
+                  <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          placeholder="Search for a contact..."
+                  />
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                  <button
+                          type="submit"
+                          class="btn btn-primary btn-lg btn-block text-white btn-search"
+                  >
+                    <span class="icon-search icon mr-2"></span>Search
+                  </button>
+                </div>
+              </div>
+            </form>
             <!--Create Entry Form-->
             <form id="create-task-form">
               <div class="form-row align-items-center" >
                 <div class="col-sm-3 my-1">
                   <label class="sr-only" for="inlineFormInputFirstName"
-                    >First Name</label
+                  >First Name</label
                   >
                   <input
-                    type="text"
-                    class="form-control"
-                    id="inlineFormInputFirstName"
-                    placeholder="First Name"
+                          type="text"
+                          class="form-control"
+                          id="inlineFormInputFirstName"
+                          placeholder="First Name"
                   />
                 </div>
                 <div class="col-sm-3 my-1">
                   <label class="sr-only" for="inlineFormInputLastName"
-                    >Last Name</label
+                  >Last Name</label
                   >
                   <input
-                    type="text"
-                    class="form-control"
-                    id="inlineFormInputLastName"
-                    placeholder="Last Name"
+                          type="text"
+                          class="form-control"
+                          id="inlineFormInputLastName"
+                          placeholder="Last Name"
                   />
                 </div>
                 <div class="col-sm-2 my-1">
                   <label class="sr-only" for="inlineFormInputNumber"
-                    >Phone Number</label
+                  >Phone Number</label
                   >
                   <input
-                    type="text"
-                    class="form-control"
-                    id="inlineFormInputNumber"
-                    placeholder="Phone Number"
+                          type="text"
+                          class="form-control"
+                          id="inlineFormInputNumber"
+                          placeholder="Phone Number"
                   />
                 </div>
                 <div class="col-sm-3 my-1">
                   <label class="sr-only" for="inlineFormInputEmail"
-                    >E-Mail Address</label
+                  >E-Mail Address</label
                   >
                   <input
-                    type="text"
-                    class="form-control"
-                    id="inlineFormInputEmail"
-                    placeholder="E-Mail Address"
+                          type="text"
+                          class="form-control"
+                          id="inlineFormInputEmail"
+                          placeholder="E-Mail Address"
                   />
                 </div>
                 <div class="col-sm-1 my-1">
@@ -240,114 +162,139 @@
               </div>
             </form>
           </div>
-        </div>
 
-        <!-- Modal for update a contact -->
-        <div
-          class="modal fade"
-          id="exampleModalCenter"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">
-                  Change entry
-                </h5>
-                <button
-                  type="button"
-                  class="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="recipient-Firstname" class="col-form-label"
-                      >First Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="recipient-Firstname"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="recipient-Lastname" class="col-form-label"
-                      >Last Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="recipient-Lastname"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="recipient-number" class="col-form-label"
-                      >Phone Number</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="recipient-number"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="recipient-email" class="col-form-label"
-                      >E-Mail</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="recipient-email"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="button"
-                  class="btn btn-secondary"
-                  data-dismiss="modal"
-                >
-                  Close
-                </button>
-                <button type="button" class="btn btn-primary">
-                  Save changes
-                </button>
-              </div>
+
+          <!--Data Table-->
+          <div class="container">
+          <table id="tasks-table" class="table table-hover">
+            <thead>
+            <tr class="table-header">
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Phone Number</th>
+              <th scope="col">E-Mail Address</th>
+              <th scope="col">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Modal for update a contact -->
+      <div
+              class="modal fade"
+              id="exampleModalCenter"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalCenterTitle"
+              aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">
+                Change contact
+              </h5>
+              <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-Firstname" class="col-form-label"
+                  >First Name</label
+                  >
+                  <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-Firstname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="recipient-Lastname" class="col-form-label"
+                  >Last Name</label
+                  >
+                  <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-Lastname"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="recipient-number" class="col-form-label"
+                  >Phone Number</label
+                  >
+                  <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="recipient-email" class="col-form-label"
+                  >E-Mail</label
+                  >
+                  <input
+                          type="text"
+                          class="form-control"
+                          id="recipient-email"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button  type="submit" class="btn btn-primary" value="Save">
+                Save changes
+              </button>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!--Page Footer-->
-      <footer class="site-footer">
-        <div class="row text-center">
-          <div class="col-12">
-            <p class="copyright">
-              <small>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                All rights reserved | This template is made with
-                <i class="icon-heart text-danger" aria-hidden="true"></i> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small
-              >
-            </p>
-          </div>
+    <div class="clear"></div>
+  </div>
+
+
+  <!--Page Footer-->
+    <footer class="site-footer">
+      <div class="text-center">
+        <div class="col-12">
+          <p class="copyright">
+            <small>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | This template is made with
+              <i class="icon-heart text-danger" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank">Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small
+            >
+          </p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
+
 
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
@@ -356,16 +303,12 @@
     <script src="js/stickyfill.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
-
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
-
     <script src="js/bootstrap-select.min.js"></script>
-
     <script src="js/custom.js"></script>
-
-
     <script src="js/entry.js"></script>
+
   </body>
 </html>

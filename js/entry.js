@@ -24,6 +24,40 @@ window.ToDoList = {
         });
     },
 
+    updateTask: function(id){
+        let firstNameValue = $('#recipient-Firstname').val();
+        let lastNameValue = $('#recipient-Lastname').val();
+        let numberValue = $('#recipient-number').val();
+        let emailValue = $('#recipient-email').val();
+
+        var requestBody = {
+            firstName: firstNameValue,
+            lastName: lastNameValue,
+            number: numberValue,
+            email: emailValue
+        }
+        $.ajax({
+            url: ToDoList.API_URL +'?id=' + id,
+            method: 'PUT',
+            contentType: 'application/json',
+            data: JSON.stringify(requestBody)
+        }).done(function () {
+            ToDoList.getTasks();
+
+        });
+
+    },
+
+    deleteTask: function(id){
+
+        $.ajax({
+            url:ToDoList.API_URL +'?id=' + id,
+            method: 'DELETE'
+        }).done(function () {
+            ToDoList.getTasks();
+        })
+    },
+
     getTasks: function(){
         $.ajax({
             url: ToDoList.API_URL,
@@ -67,6 +101,18 @@ window.ToDoList = {
             event.preventDefault();
             ToDoList.createTask();
         });
+
+        $('#exampleModalCenter').submit(function (event) {
+            event.preventDefault();
+            let id = $(this).data('id');
+            ToDoList.updateTask(id);
+        })
+
+        $('#tasks-table tbody').delegate('.remove-task', 'click', function (event) {
+            event.preventDefault();
+            let id = $(this).data('id');
+            ToDoList.deleteTask(id);
+        })
 
     }
 };
