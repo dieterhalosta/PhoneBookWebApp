@@ -19,9 +19,14 @@ window.ToDoList = {
             contentType: 'application/json',
             data: JSON.stringify(requestBody)
         }).done(function (response) {
+           ToDoList.clearForm();
            ToDoList.getTasks();
 
         });
+    },
+
+    clearForm: function(){
+        document.getElementById("create-task-form").reset();
     },
 
     updateTask: function(id){

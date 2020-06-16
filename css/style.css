@@ -1705,8 +1705,11 @@ h4 {
 
 .site-footer {
   padding: 1.2rem 0;
-  position: relative;
+  /*position: relative;*/
   background: #555;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 @media (max-width: 991.98px) {
   .site-footer {
@@ -1716,7 +1719,7 @@ h4 {
 .site-footer.slanted-footer:before {
   content: "";
   background: #001f42;
-  height: 200px;
+  height: 150px;
   -webkit-transform: skewY(-5deg);
   -ms-transform: skewY(-5deg);
   transform: skewY(-5deg);
@@ -1725,6 +1728,7 @@ h4 {
   top: -100px;
   right: 0;
   z-index: -1;
+
 }
 .site-footer h3 {
   font-size: 1rem;
