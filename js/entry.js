@@ -89,10 +89,8 @@ window.ToDoList = {
                   <td>
                     <a href="#" class="update-task actions edit" data-id=${task.id}>
                       <i
-                        class="fa fa-wrench"
-<!--                        data-toggle="modal"-->
-<!--                        data-target="#exampleModalCenter"-->
-                      ></i>
+                        class="fa fa-wrench">
+                      </i>
                     </a>
                     <a href="#" class="remove-task actions" data-id=${task.id}>
                       <i class="fa fa-trash"></i>
