@@ -87,11 +87,11 @@ window.ToDoList = {
                   <td>${task.number}</td>
                   <td>${task.email}</td>
                   <td>
-                    <a href="#" class="update-task actions" data-id=${task.id}>
+                    <a href="#" class="update-task actions edit" data-id=${task.id}>
                       <i
                         class="fa fa-wrench"
-                        data-toggle="modal"
-                        data-target="#exampleModalCenter"
+<!--                        data-toggle="modal"-->
+<!--                        data-target="#exampleModalCenter"-->
                       ></i>
                     </a>
                     <a href="#" class="remove-task actions" data-id=${task.id}>
@@ -114,10 +114,10 @@ window.ToDoList = {
         // })
 
 
-        $('#tasks-table tbody').delegate('.edit', 'submit', function (event) {
+        $('#tasks-table tbody').delegate('a.edit', 'click', function (event) {
             event.preventDefault();
             let id = $(this).data('id');
-            ToDoList.updateTask(id);
+            ToDoList.startUpdateTask(id);
         })
 
         $('#tasks-table tbody').delegate('.remove-task', 'click', function (event) {
