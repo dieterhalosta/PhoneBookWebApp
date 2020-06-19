@@ -30,10 +30,10 @@ window.ToDoList = {
     },
 
     updateTask: function(id){
-        let firstNameValue = $('#recipient-Firstname').val();
-        let lastNameValue = $('#recipient-Lastname').val();
-        let numberValue = $('#recipient-number').val();
-        let emailValue = $('#recipient-email').val();
+        let firstNameValue = $('#inlineFormInputFirstName').val();
+        let lastNameValue = $('#inlineFormInputLastName').val();
+        let numberValue = $('#inlineFormInputNumber').val();
+        let emailValue = $('#inlineFormInputEmail').val();
 
         var requestBody = {
             firstName: firstNameValue,
@@ -47,6 +47,7 @@ window.ToDoList = {
             contentType: 'application/json',
             data: JSON.stringify(requestBody)
         }).done(function () {
+            ToDoList.clearForm();
             ToDoList.getTasks();
 
         });
@@ -99,6 +100,12 @@ window.ToDoList = {
                 </tr>`
     },
 
+    getContact: function(tasks){
+        return`
+              
+        `
+    },
+
     bindEvents: function () {
         $('#create-task-form').submit(function (event) {
             event.preventDefault();
@@ -112,10 +119,11 @@ window.ToDoList = {
         // })
 
 
+
         $('#tasks-table tbody').delegate('a.edit', 'click', function (event) {
             event.preventDefault();
             let id = $(this).data('id');
-            ToDoList.startUpdateTask(id);
+            ToDoList.updateTask(id);
         })
 
         $('#tasks-table tbody').delegate('.remove-task', 'click', function (event) {
@@ -124,8 +132,11 @@ window.ToDoList = {
             ToDoList.deleteTask(id);
         })
 
-    }
+    },
+
+
 };
+
 
 ToDoList.getTasks();
 ToDoList.bindEvents();
